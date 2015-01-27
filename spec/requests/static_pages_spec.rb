@@ -1,4 +1,4 @@
-require 'spec_helper'
+ require 'spec_helper'
 
 describe "Statit Pages" do
 
@@ -10,7 +10,12 @@ describe "Statit Pages" do
 
 	   it "should have the right title" do
 	   	visit '/static_pages/home'
-	   	expect(page).to have_title("Website | Home")
+	   	expect(page).to have_title("Website")
+	   end
+
+	   it "should have the base title" do
+	   	visit '/static_pages/home'
+	   	expect(page).not_to have_title('| Home')
 	   end
 	end
 

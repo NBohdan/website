@@ -3,7 +3,6 @@ require 'spork'
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 
-Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
@@ -46,7 +45,7 @@ Spork.prefork do
     config.order = "random"
     config.include Capybara::DSL
   end
-end
+
 
 Spork.each_run do
   # This code will be run each time you run your specs.
