@@ -18,15 +18,9 @@
   </div>
 <% else %>
   <div class="center hero-unit">
-    <h1>Website</h1>
-
-    <h2>
-      <iframe width="320" height="55" src="http://www.kissfm.ua/player/embed?stream=KissFM_digital" frameborder="0" scrolling="no"></iframe>
-    </h2>
-
-    <%= link_to "Sign up now!", signup_path,
-                                class: "btn btn-large btn-primary" %>
+    <h1 style="font-family: comic sans ms; color: aqua" >Website</h1>
+      <div style="font-family: comic sans ms; color: aqua">New user?</div>
+    <%= link_to image_tag("digg_logo(1).png"), signup_path,
+                                class: "btn-large" %>
   </div>
-
-	<%= link_to image_tag("613-361.png", alt: "Ford Mustang"), 'http://rubyonrails.org/' %>
 <% end %>

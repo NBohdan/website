@@ -1,7 +1,5 @@
 @import "bootstrap";
 
-background-image:url('/app/assets/images/skyrim.jpg');
-
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -21,6 +19,9 @@ html {
 
 body {
   padding-top: 130px;
+  background: url(chk_captcha.jpg) top ;
+  background-attachment: fixed
+
 }
 
 section {
@@ -42,6 +43,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: comic sans ms;
+  color: aqua
 }
 
 h1 {
@@ -89,10 +92,11 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $gray-light;
+  border-top: 1px solid orange;
+  color: orange;
   a {
-    color: $gray;
+    font-family: "Comic Sans MS";
+    color: aqua;
     &:hover {
       color: $gray-darker;
     }
@@ -186,6 +190,7 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
+  color: green;
 }
 
 input {

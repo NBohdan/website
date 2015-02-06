@@ -2,9 +2,9 @@
 <h1>
   <%= current_user.name %>
 </h1>
-<span>
+<span style="font-family: comic sans ms; color: aqua">
   <%= link_to "view my profile", current_user %>
 </span>
-<span>
+<span style="font-family: comic sans ms; color: aqua">
   <%= pluralize(current_user.microposts.count, "micropost") %>
 </span>
