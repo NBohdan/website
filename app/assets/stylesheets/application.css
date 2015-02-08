@@ -11,3 +11,4 @@
  *= require_self
  *= require_tree .
  */
+background-image: asset-url("chk_captcha.jpg");
